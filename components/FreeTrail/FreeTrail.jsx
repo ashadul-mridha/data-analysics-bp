@@ -14,9 +14,9 @@ const FreeTrail = () => {
             <div className="col-md-12">
               <div className="d-flex justify-content-around flex-column flex-lg-row">
                 <button className="btnprimary">
-                  Start My 30 days free trail
+                  Data Analysics Demo
                 </button>
-                <button className="btnsecondary">schedule my demo</button>
+                <button className="btnsecondary">Schedule Your Consultancy</button>
               </div>
             </div>
           </div>

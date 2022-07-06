@@ -1,5 +1,5 @@
 .footerWrapper {
-  background-color: #1c355e;
+  background-color: #204b68;
   background-image: url("../public/images/footeroverlay.png");
   background-blend-mode: overlay;
   background-position: center;
@@ -22,8 +22,8 @@
 }
 .newsletterSection .btnprimary {
   color: #ffffff;
-  background-color: #f15822;
-  border: 2px solid #f15822;
+  background-color: #0096ff;
+  border: 2px solid #0096ff;
   border-radius: 5px;
   padding: 8px 18px;
   font-weight: 400;

@@ -18,10 +18,11 @@ const PartnerSlider = () => {
             spaceBetween={20}
             slidesPerView={5}
             autoplay={{
-                delay: 1500,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
+              delay: 1500,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
             }}
+            loop={true}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
             breakpoints={{

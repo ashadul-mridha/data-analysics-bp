@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="row gx-5 gy-3 justify-content-center align-items-start">
             <div className="col-lg-6 col-12">
               <div className={styles.newsletterSection}>
-                <h4>BPLanding</h4>
+                <h4>Logo</h4>
                 <p>Newsletter Signup*</p>
                 <form action="">
                   <input
@@ -25,7 +25,7 @@ const Footer = () => {
                 </form>
               </div>
             </div>
-            <div className="col-lg-2 col-6">
+            {/* <div className="col-lg-2 col-6">
               <div className={styles.otherLinks}>
                 <h6>OTHER LINKS</h6>
                 <ul>
@@ -76,8 +76,8 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
-            <div className="col-lg-2 col-6">
+            </div> */}
+            <div className="col-lg-3 col-6">
               <div className={styles.intregrations}>
                 <h6>Intregrations</h6>
                 <ul>
@@ -142,7 +142,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-2 col-12">
+            <div className="col-lg-3 col-6">
               <div className={styles.contactus}>
                 <h6>Contact us</h6>
                 <ul>

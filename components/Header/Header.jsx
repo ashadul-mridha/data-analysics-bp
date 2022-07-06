@@ -36,11 +36,11 @@ const Header = () => {
                 height={"100%"}
                 objectFit="cover"
               /> */}
-              <h3 className="mb-0">BPLanding</h3>
+              <h3 className="mb-0">Logo</h3>
             </div>
             <nav className={navbarOpen ? `navBar open` : "navBar"}>
               <ul className={styles.navContainer}>
-                <li>
+                {/* <li>
                   <Link href={"/features"}>
                     <a>Features</a>
                   </Link>
@@ -66,11 +66,11 @@ const Header = () => {
                       Start Trail
                     </button>
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link href={"/demo"}>
                     <button className={`${styles.btnSecondary}`}>
-                      Get A Demo
+                      Data Analysics Request
                     </button>
                   </Link>
                 </li>
