@@ -1,0 +1,83 @@
+.heroWrapper {
+  background-image: url("../public//images/hero-img.jpg");
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 150px 60px;
+}
+
+.heroSection {
+  padding: 70px 0px 25px 0px;
+  background-color: rgba(0, 0, 0, 0.427);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+.title {
+  color: #ffffff;
+  font-size: 66px;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 6px 0px;
+}
+.subTitle {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Biryani", sans-serif;
+  text-align: center;
+}
+.heroSection p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+.btnFont {
+  font-size: 29px;
+  font-weight: 700;
+  padding: 8px 23px;
+  margin: 5px auto;
+}
+
+/* responsive  */
+
+@media only screen and (max-width: 991px) {
+  .heroSection {
+    padding: 90px 0px 25px 0px;
+  }
+  .heroWrapper {
+    padding: 0px;
+  }
+  .title {
+    font-size: 45px;
+  }
+  .heading {
+    font-size: 17px;
+  }
+  .subTitle {
+    font-size: 20px;
+  }
+  .btnFont {
+    font-size: 25px;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 516px) {
+  .btnFont {
+    width: 90%;
+  }
+}

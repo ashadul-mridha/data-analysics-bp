@@ -1,0 +1,83 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* selection effect  */
+h2::selection {
+  background-color: #ff865e;
+  color: #ffffff;
+}
+h3::selection {
+  background-color: #ff865e;
+  color: #ffffff;
+}
+h4::selection {
+  background-color: #ff865e;
+  color: #ffffff;
+}
+h6::selection {
+  background-color: #ff865e;
+  color: #ffffff;
+}
+p::selection {
+  background-color: #ff865e;
+  color: #ffffff;
+}
+
+/* global styles  */
+.btnprimary {
+  color: #ffffff;
+  background-color: #f15822;
+  border: 2px solid #f15822;
+  border-radius: 10px;
+  padding: 8px 18px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  text-transform: uppercase;
+  margin: 10px 0px;
+}
+.btnsecondary {
+  color: #010c1e;
+  background-color: #ffffff;
+  border: 2px solid #010c1e;
+  border-radius: 10px;
+  padding: 8px 18px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  text-transform: uppercase;
+  margin: 10px 0px;
+}
+.btnsecondary:hover {
+  color: #ffffff;
+  background-color: #010c1e;
+}
+
+@media only screen and (max-width: 991px) {
+  .btnprimary {
+    padding: 11px 18px;
+    font-size: 18px;
+    width: 80%;
+    margin: 0px auto;
+  }
+  .btnsecondary {
+    padding: 11px 18px;
+    font-size: 18px;
+    width: 80%;
+    margin: 10px auto;
+  }
+}

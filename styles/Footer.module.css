@@ -1,0 +1,149 @@
+.footerWrapper {
+  background-color: #1c355e;
+  background-image: url("../public/images/footeroverlay.png");
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: repeat;
+  padding: 50px 20px 20px 30px;
+}
+.newsletterSection h4 {
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.newsletterSection p {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.newsletterSection .btnprimary {
+  color: #ffffff;
+  background-color: #f15822;
+  border: 2px solid #f15822;
+  border-radius: 5px;
+  padding: 8px 18px;
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin: 10px 0px;
+}
+
+/* other link  */
+.otherLinks h6 {
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.otherLinks ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.otherLinks ul li {
+  padding: 10px 0px;
+}
+.otherLinks ul li:hover > a {
+  color: #ffffff;
+}
+.otherLinks ul li a {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #adabab;
+  text-decoration: none;
+}
+
+/* intregrations  */
+
+.intregrations h6 {
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.intregrations ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.intregrations ul li {
+  padding: 10px 0px;
+}
+.intregrations ul li:hover > a {
+  color: #ffffff;
+}
+.intregrations ul li a {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #adabab;
+  text-decoration: none;
+}
+
+/* contactus */
+.contactus h6 {
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.contactus ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+.contactus ul li {
+  padding: 10px 0px;
+}
+.contactus ul li:hover > a {
+  color: #ffffff;
+}
+.contactus ul li a {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  color: #adabab;
+  text-decoration: none;
+}
+
+/* social icon  */
+.socialIcon {
+  display: flex;
+  flex-wrap: wrap;
+}
+.socialIcon div {
+  margin-right: 5px;
+}
+.socialIcon div i {
+  font-size: 21px;
+}
+
+.facebook {
+  color: #3b5998;
+}
+.instagram {
+  color: #f2003c;
+}
+.utube {
+  color: #a82400;
+}
+.twitter {
+  color: #00aced;
+}
+.linkedin {
+  color: #007bb6;
+}
+
+@media only screen and (max-width: 991px) {
+  .newsletterSection h4 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,98 @@
+.headerWrapper {
+  background-color: #010c1e;
+  padding: 35px 5px;
+}
+.logo {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.navContainer {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.navContainer li {
+  margin-left: 15px;
+}
+.navContainer li:first-child {
+  margin-left: 0px;
+}
+.navContainer li:hover > a {
+  opacity: 0.7;
+}
+.navContainer li > a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.9px;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+.btnPrimary {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  transition: transform 0.5s ease-in-out;
+  opacity: 1;
+  padding: 10px 10px;
+  background-color: #010c1e;
+}
+.btnPrimary:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+.btnSecondary {
+  color: #ffffff;
+  border: 1px solid #ff6602;
+  border-radius: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  transition: transform 0.5s ease-in-out;
+  opacity: 1;
+  padding: 10px 10px;
+  background: #ff6602;
+}
+.btnSecondary:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+/* navbar */
+.navbaricon {
+  color: #ffffff;
+  font-size: 20px;
+}
+.navbaricon:hover {
+  cursor: pointer;
+}
+
+/* responsive  */
+
+@media only screen and (min-width: 992px) {
+  .navbaricon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .navContainer {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .navContainer li {
+    margin: 5px auto;
+  }
+  .navContainer li:first-child {
+    margin: 5px auto;
+  }
+}
