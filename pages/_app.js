@@ -1,8 +1,9 @@
-import '../styles/globals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
+import ContextApiCompo from '../context';
+import '../styles/globals.css';
 
 export default function MyApp({ Component, pageProps }) {
   // Use the layout defined at the page level, if available
@@ -10,9 +11,21 @@ export default function MyApp({ Component, pageProps }) {
 
   //if layout found
   if (getLayout) {
-    return getLayout(<Component {...pageProps} />)
+    return getLayout(
+      <>
+        <ContextApiCompo>
+          <Component {...pageProps} />
+        </ContextApiCompo>
+      </>
+    )
   }
 
   //if there are not layout found here
-  return (<Component {...pageProps} />)
+  return (
+    <>
+      <ContextApiCompo>
+        <Component {...pageProps} />
+      </ContextApiCompo>
+    </>
+  )
 }

@@ -1,4 +1,5 @@
 import Footer from "../components/Footer/Footer";
+import { DataAnalysicsForm } from "../components/Forms/DataAnalysicsForm";
 import FreeTrail from "../components/FreeTrail/FreeTrail";
 import Header from "../components/Header/Header";
 import Feature from "../components/HomePage/Feature";
@@ -7,8 +8,11 @@ import { HeroSectionSlider } from "../components/HomePage/HeroSectionSlider";
 import SpeedSheetFeature from "../components/HomePage/SpeedSheetFeature";
 import VideoFeature from "../components/HomePage/VideoFeature";
 import PartnerSlider from "../components/Partner/PartnerSlider";
+import useContextHook from "../hooks/useContext";
 
 export default function Home() {
+
+  const {showForm} = useContextHook();
 
   const noManualInput = {
     imgUrl: "/images/features/features4.svg",
@@ -46,7 +50,7 @@ export default function Home() {
   };
 
   return (
-    <>
+    <div>
       {/* <HeroSection /> */}
       {/* <PartnerSlider /> */}
       {/* <VideoFeature /> */}
@@ -59,7 +63,7 @@ export default function Home() {
       <Feature data={autometicInsight} />
       <Feature className="reverse" data={quickShare} />
       <FreeTrail />
-    </>
+    </div>
   );
 }
 
