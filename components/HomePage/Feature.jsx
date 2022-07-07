@@ -21,6 +21,11 @@ const Feature = ({ className, data }) => {
             align-items: center;
             padding: 50px 0px;
           }
+          .featureImage img {
+            height: 300px;
+            width: 100%;
+            object-fit: contain;
+          }
           .featureWrapper.reverse > .featureImage {
             order: 1;
           }
@@ -78,6 +83,9 @@ const Feature = ({ className, data }) => {
               grid-template-columns: repeat(1, 1fr);
               padding: 30px 0px;
             }
+            .featureImage img {
+              height: 250px;
+            }
           }
         `}</style>
         <div className={`container-md featureWrapper ${className}`}>
@@ -85,9 +93,6 @@ const Feature = ({ className, data }) => {
             <img
               alt="feature Image"
               src={data.imgUrl}
-              height="300px"
-              width="100%"
-              objectFit="contain"
             />
           </div>
           <div className={"featureContent"}>

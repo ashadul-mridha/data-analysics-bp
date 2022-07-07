@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
@@ -28,15 +30,11 @@ const Header = () => {
         <div className="container">
           <div className="d-flex justify-content-between align-items-center">
             <div className={styles.logo}>
-              {/* <Image
-                src={"/images/header-logo.webp"}
+              <img
+                src={"/images/logo.jpeg"}
                 alt="logo of the site"
-                layout="responsive"
-                width={"100%"}
-                height={"100%"}
-                objectFit="cover"
-              /> */}
-              <h3 className="mb-0">Logo</h3>
+              />
+              {/* <h3 className="mb-0">Logo</h3> */}
             </div>
             <nav className={navbarOpen ? `navBar open` : "navBar"}>
               <ul className={styles.navContainer}>

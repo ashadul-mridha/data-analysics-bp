@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import styles from "../../styles/Footer.module.css";
 import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare, FaYoutube } from "react-icons/fa";
@@ -10,7 +11,12 @@ const Footer = () => {
           <div className="row gx-5 gy-3 justify-content-center align-items-start">
             <div className="col-lg-6 col-12">
               <div className={styles.newsletterSection}>
-                <h4>Logo</h4>
+                <div className={styles.logoFooter}>
+                  <img
+                    src={"/images/footerLogo.png"}
+                    alt="logo of the site"
+                  />
+                </div>
                 <p>Newsletter Signup*</p>
                 <form action="">
                   <input

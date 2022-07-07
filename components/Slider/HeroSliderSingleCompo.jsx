@@ -23,10 +23,30 @@ export const HeroSliderSingleCompo = ({data}) => {
             line-height: 5rem;
             margin-bottom: 1rem;
           }
+          @media screen and (max-width: 992px) {
+            .singleSliderWrapper {
+              height: 500px;
+              margin-top: 50px;
+            }
+            .heading {
+              font-size: 2.4rem;
+              line-height: 3rem;
+            }
+          }
+          @media screen and (max-width: 600px) {
+            .singleSliderWrapper {
+              height: 400px;
+              margin-top: 50px;
+            }
+            .heading {
+              font-size: 1.6rem;
+              line-height: 2.6rem;
+            }
+          }
         `}</style>
         <div className="container h-100">
           <div className="row h-100">
-            <div className="col-lg-6">
+            <div className="col-6 col-md-12 col-lg-6">
               <div className="sliderContent">
                 <h1 className="heading">{data?.title}</h1>
                 <button className="btnprimary">Data Analysics Request</button>

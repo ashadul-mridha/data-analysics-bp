@@ -6,6 +6,11 @@
   background-repeat: repeat;
   padding: 50px 20px 20px 30px;
 }
+.logoFooter img{
+  height: 80px;
+  width: 40%;
+  object-fit: contain;
+}
 .newsletterSection h4 {
   font-size: 60px;
   font-family: "Poppins", sans-serif;
