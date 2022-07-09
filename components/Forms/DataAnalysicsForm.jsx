@@ -56,6 +56,32 @@ export const DataAnalysicsForm = () => {
             color: #222;
             cursor: pointer;
           }
+
+          @media only screen and (max-width: 991px) {
+            .multiStepForm {
+              margin: 20px 30px;
+              width: 100%;
+            }
+            .form-heading h3 {
+              font-size: 2.2rem;
+            }
+            .closeBtn {
+              font-size: 2.2rem;
+            }
+          }
+
+          @media only screen and (max-width: 600px) {
+            .multiStepForm {
+              margin: 10px 20px;
+              width: 100%;
+            }
+            .form-heading h3 {
+              font-size: 1.8rem;
+            }
+            .closeBtn {
+              font-size: 1.8rem;
+            }
+          }
         `}</style>
         <div className="multiStepForm">
           <div className="formHeader container">

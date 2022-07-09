@@ -12,6 +12,7 @@ export default function StepTwo({ prevFormStep, nextFormStep }) {
   } = useForm();
   const onSubmit = (data) => {
     setFormValues(data);
+    console.log(data);
     nextFormStep();
   };
   const backpreviousStep= () => {
@@ -61,7 +62,14 @@ export default function StepTwo({ prevFormStep, nextFormStep }) {
           <div className="col-lg-12">
             <div className="form-group form-input-group">
               <label htmlFor="CIndustry">Please Upload Related Document</label>
-              <input type="file" className="form-control" />
+              <input
+                {...register("documentFile", {
+                  required: "File Required",
+                })}
+                type="file"
+                className="form-control"
+              />
+              <p className="text-danger">{errors.documentFile?.message}</p>
             </div>
           </div>
           <div className="col-lg-6">

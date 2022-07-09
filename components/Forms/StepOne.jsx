@@ -59,37 +59,67 @@ export default function StepOne({ nextFormStep }) {
           <div className="col-lg-6">
             <div className="form-group form-input-group">
               <label htmlFor="first-name">First Name</label>
-              <input type="text" className="form-control" />
+              <input
+                {...register("firstName", {
+                  required: "First Name Is Required",
+                })}
+                type="text"
+                className="form-control"
+              />
+              <p className="text-danger">{errors.firstName?.message}</p>
             </div>
           </div>
           <div className="col-lg-6">
             <div className="form-group form-input-group">
               <label htmlFor="lname">Last Name</label>
-              <input type="text" className="form-control" />
+              <input
+                {...register("lastName")}
+                type="text"
+                className="form-control"
+              />
             </div>
           </div>
           <div className="col-lg-6">
             <div className="form-group form-input-group">
-              <label htmlFor="phone">Phone</label>
+              <label {...register("phone")} htmlFor="phone">
+                Phone
+              </label>
               <input type="text" className="form-control" />
             </div>
           </div>
           <div className="col-lg-6">
             <div className="form-group form-input-group">
               <label htmlFor="email">Working Email</label>
-              <input type="email" className="form-control" />
+              <input
+                {...register("email", { required: "Email is required" })}
+                type="email"
+                className="form-control"
+              />
+              <p className="text-danger">{errors.email?.message}</p>
             </div>
           </div>
           <div className="col-lg-6">
             <div className="form-group form-input-group">
               <label htmlFor="BName">Company Bussiness Name</label>
-              <input type="text" className="form-control" />
+              <input
+                {...register("busniessName", {
+                  required: "Busniess Name Required",
+                })}
+                type="text"
+                className="form-control"
+              />
+
+              <p className="text-danger">{errors.busniessName?.message}</p>
             </div>
           </div>
           <div className="col-lg-6">
             <div className="form-group form-input-group">
               <label htmlFor="CIndustry">Company Industry</label>
-              <input type="text" className="form-control" />
+              <input
+                {...register("companyIndustry")}
+                type="text"
+                className="form-control"
+              />
             </div>
           </div>
           <div className="col-lg-12">
