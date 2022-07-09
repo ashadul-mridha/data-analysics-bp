@@ -7,10 +7,8 @@ const FreeTrail = () => {
   
   const { clickShowForm } = useContextHook();
 
-  const { showForm } = useContextHook();
   return (
     <>
-      {showForm && <DataAnalysicsForm />}
       <BPWaves />
       <div className="freetrailwrapper">
         <style jsx>{`
@@ -24,7 +22,7 @@ const FreeTrail = () => {
             <div className="col-md-12">
               <div className="d-flex flex-column align-items-center flex-lg-row justify-content-around">
                 <button onClick={clickShowForm} className="btnprimary">
-                  Data Analysics Demo
+                  data analysics demo
                 </button>
                 <button className="btnsecondary">
                   Schedule Your Consultancy

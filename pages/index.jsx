@@ -50,10 +50,12 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <>
       {/* <HeroSection /> */}
       {/* <PartnerSlider /> */}
       {/* <VideoFeature /> */}
+
+      {showForm && <DataAnalysicsForm />}
       <HeroSectionSlider />
       <FreeTrail />
       <Feature data={noManualInput} />
@@ -63,16 +65,7 @@ export default function Home() {
       <Feature data={autometicInsight} />
       <Feature className="reverse" data={quickShare} />
       <FreeTrail />
-    </div>
+    </>
   );
 }
 
-Home.getLayout = function getLayout(page) {
-  return (
-    <>
-      <Header />
-      {page}
-      <Footer />
-    </>
-  );
-};

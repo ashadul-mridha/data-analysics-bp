@@ -1,4 +1,9 @@
+import useContextHook from "../../hooks/useContext";
+
 export const HeroSliderSingleCompo = ({data}) => {
+  
+  const { clickShowForm } = useContextHook();
+
   return (
     <>
       <div className="singleSliderWrapper">
@@ -49,7 +54,9 @@ export const HeroSliderSingleCompo = ({data}) => {
             <div className="col-6 col-md-12 col-lg-6">
               <div className="sliderContent">
                 <h1 className="heading">{data?.title}</h1>
-                <button className="btnprimary">Data Analysics Request</button>
+                <button onClick={clickShowForm} className="btnprimary">
+                  Data Analysics Request
+                </button>
               </div>
             </div>
           </div>

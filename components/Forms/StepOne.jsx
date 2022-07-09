@@ -1,13 +1,3 @@
-import {
-  Container,
-  FormControl,
-  Grid,
-  InputLabel,
-  MenuItem,
-  Select,
-  TextField,
-  Typography
-} from "@mui/material";
 import { useForm } from "react-hook-form";
 import useContextHook from "../../hooks/useContext";
 
@@ -21,101 +11,94 @@ export default function StepOne({ nextFormStep }) {
   } = useForm();
 
   const onSubmit = (data) => {
+    console.log(data);
     setFormValues(data);
     nextFormStep();
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <Container>
-        <Grid container py={2}>
-          <Grid lg={6}>
-            <Typography sx={{fontSize: '2rem', color: '#000'}} variant="h4">Hello</Typography>
-            <TextField
-            sx={{
-              fontWeight: 700,
-              fontSize: 2,
-            }}
-              fullWidth={true}
-              size={"learge"}
-              color={"primary"}
-              id="standard-basic"
-              label="Frist Name"
-              variant="standard"
-            />
-          </Grid>
-          <Grid lg={6}>
-            <TextField
-              fullWidth={true}
-              id="standard-basic"
-              label="Last Name"
-              variant="standard"
-            />
-          </Grid>
-          <Grid lg={6}>
-            <TextField
-              fullWidth={true}
-              id="standard-basic"
-              label="Phone"
-              variant="standard"
-            />
-          </Grid>
-          <Grid lg={6}>
-            <TextField
-              fullWidth={true}
-              id="standard-basic"
-              label="Email"
-              variant="standard"
-            />
-          </Grid>
-          <Grid lg={6}>
-            <TextField
-              fullWidth={true}
-              id="standard-basic"
-              label="Busniess Name"
-              variant="standard"
-            />
-          </Grid>
-          <Grid lg={6}>
-            <TextField
-              fullWidth={true}
-              id="standard-basic"
-              label="Busniess Industry"
-              variant="standard"
-            />
-          </Grid>
-          <Grid lg={6}>
-            <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">Age</InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                label="Age"
-              >
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
-              </Select>
-            </FormControl>
-          </Grid>
-          <Grid lg={6}>
-            <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">Roll</InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                label="Age"
-              >
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
-              </Select>
-            </FormControl>
-          </Grid>
-        </Grid>
-      </Container>
-
-      <input type="submit" />
+      <style jsx>{`
+        .form-input-group {
+          font-size: 15px;
+          font-weight: 400;
+        }
+        .form-input-group label {
+          color: #0096ff;
+          padding: 10px 0px 0px 0px;
+        }
+        .form-input-group input {
+          border: none;
+          border-bottom: 2px solid #222;
+          padding: 10px 0px;
+          font-size: 1.6rem;
+        }
+        .form-input-group input:focus {
+          border: none;
+          box-shadow: none;
+          border-bottom: 2px solid #0096ff;
+        }
+        .submit-button {
+          padding: 12px 0px;
+          font-size: 2rem;
+          font-weight: 400;
+          text-align: center;
+          color: #fff;
+          background-color: #007bff;
+          border: 1px solid #007bff;
+          width: 100%;
+          margin: 20px 0px 5px 0px;
+        }
+        .submit-button:hover {
+          background-color: #09a2ad;
+          border: 1px solid #09a2ad;
+        }
+      `}</style>
+      <div className="container my-3">
+        <div className="row gx-5 gy-2">
+          <div className="col-lg-6">
+            <div className="form-group form-input-group">
+              <label htmlFor="first-name">First Name</label>
+              <input type="text" className="form-control" />
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="form-group form-input-group">
+              <label htmlFor="lname">Last Name</label>
+              <input type="text" className="form-control" />
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="form-group form-input-group">
+              <label htmlFor="phone">Phone</label>
+              <input type="text" className="form-control" />
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="form-group form-input-group">
+              <label htmlFor="email">Working Email</label>
+              <input type="email" className="form-control" />
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="form-group form-input-group">
+              <label htmlFor="BName">Company Bussiness Name</label>
+              <input type="text" className="form-control" />
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="form-group form-input-group">
+              <label htmlFor="CIndustry">Company Industry</label>
+              <input type="text" className="form-control" />
+            </div>
+          </div>
+          <div className="col-lg-12">
+            <button type="submit" className="submit-button">
+              Create Account And Continue
+            </button>
+          </div>
+        </div>
+      </div>
     </form>
   );
 }

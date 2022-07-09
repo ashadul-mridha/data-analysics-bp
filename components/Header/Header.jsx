@@ -1,12 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import useContextHook from "../../hooks/useContext";
 import styles from "../../styles/Header.module.css";
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const { clickShowForm } = useContextHook();
+
   return (
     <>
       <div className={styles.headerWrapper}>
@@ -30,10 +32,7 @@ const Header = () => {
         <div className="container">
           <div className="d-flex justify-content-between align-items-center">
             <div className={styles.logo}>
-              <img
-                src={"/images/logo.jpeg"}
-                alt="logo of the site"
-              />
+              <img src={"/images/logo.jpeg"} alt="logo of the site" />
               {/* <h3 className="mb-0">Logo</h3> */}
             </div>
             <nav className={navbarOpen ? `navBar open` : "navBar"}>
@@ -66,11 +65,14 @@ const Header = () => {
                   </Link>
                 </li> */}
                 <li>
-                  <Link href={"/demo"}>
-                    <button className={`${styles.btnSecondary}`}>
-                      Data Analysics Request
-                    </button>
-                  </Link>
+                  {/* <Link href={"/demo"}> */}
+                  <button
+                    onClick={clickShowForm}
+                    className={`${styles.btnSecondary}`}
+                  >
+                    Data Analysics Request
+                  </button>
+                  {/* </Link> */}
                 </li>
               </ul>
             </nav>

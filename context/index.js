@@ -5,6 +5,7 @@ export const AllContext = createContext();
 const ContextApiCompo = ({children}) => {
 
     const [formData , setFormData] = useState();
+    console.log(formData);
 
     const [showForm, setShowForm] = useState(false);
 
